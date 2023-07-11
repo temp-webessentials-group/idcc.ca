@@ -19,6 +19,9 @@ h1, h2{
     text-align: center;
     color: #ff6347;
 }
+h3 {
+    color: #ff6347;
+}
 
 nav {
     margin-bottom: 20px;
