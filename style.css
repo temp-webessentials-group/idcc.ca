@@ -114,3 +114,15 @@ button {
 button:hover {
     background-color: #e55a3f;
 }
+
+.video-container {
+    display: flex;
+    justify-content: left;
+    float: left;
+    margin-right: 10px;
+}
+
+    .video-container iframe {
+        width: 430px;
+        height: 325px;
+    }
