@@ -79,12 +79,38 @@ footer {
     background-color: #f2f2f2;
     color: #666;
 }
-.video-container {
-    float: left;
-    margin-right: 10px; 
-}
 
-    .video-container iframe {
-        width: 300px; 
-        height: 200px; 
-    }
+form {
+    margin-top: 20px;
+}
+    
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+    
+input[type="text"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+    
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    
+button:hover {
+    background-color: #e55a3f;
+}
