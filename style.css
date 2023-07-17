@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background: linear-gradient(rgb(0, 0, 0), rgb(94, 94, 94));
     color: #333;
 }
 
@@ -29,29 +29,16 @@ nav {
     border-radius: 5px;
 }
 
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
 
-        nav ul li {
-            margin-right: 10px;
-        }
 
-            nav ul li a {
-                display: block;
-                padding: 10px;
-                color: #fff;
-                text-decoration: none;
-                text-align: center;
-            }
+nav ul li a {
+    padding: 10px;
 
-                nav ul li a:hover {
-                    background-color: #ff6347;
-                }
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+}
 
 table {
     width: 100%;
@@ -113,4 +100,8 @@ button {
     
 button:hover {
     background-color: #e55a3f;
+}
+
+.nav-link {
+    border-radius: 5px;
 }
