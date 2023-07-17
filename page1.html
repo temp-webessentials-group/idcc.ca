@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--link rel="stylesheet" type="text/css" href="style.css" -->
-  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css"-->
   <title>How to Build a PC</title>
   
 </head>
@@ -12,14 +12,32 @@
   <div class="container">
     <h1>IDC Computers</h1>
     <h2>How to Build a PC</h2>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page1.html">How to Build a PC</a></li>
-        <li><a href="page2.html">Components for Sale</a></li>
-        <li><a href="page3.html">PCs for Sale</a></li>
-        <li><a href="page4.html">Contact Us</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="siteNavigation">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavigation" aria-controls="siteNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-md-center" id="siteNavigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page1.html">How to Build a PC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Computer Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">Computers for Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page4.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <h3>Steps For Building a PC (this is a test)</h3>
     
@@ -76,5 +94,6 @@ Nunc lacinia vestibulum neque, ut hendrerit lectus luctus a. Etiam eu urna ac se
   <footer>
     &copy; 2023 My Single Column Website. All rights reserved.
   </footer>
+  <script src="bootstrap.bundle.js"></script>
 </body>
 </html>
