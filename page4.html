@@ -19,15 +19,16 @@
         <li><a href="page4.html">Page 4</a></li>
       </ul>
     </nav>
-    <form id="contact-form" method="post" action="process.php">
+    <form id="contact-form" method="post" action="process.php" onsubmit="return validateForm();">
+
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name">
       
       <label for="email">Email</label>
-      <input type="text" id="email" name="email" required>
+      <input type="text" id="email" name="email">
       
       <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+      <textarea id="message" name="message" rows="6"></textarea>
       
       <button type="submit">Submit</button>
     </form>
@@ -36,5 +37,6 @@
   <footer>
     &copy; 2023 Contact Us. All rights reserved.
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
