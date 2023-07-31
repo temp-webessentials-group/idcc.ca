@@ -5,86 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
-  <style>
-.imagetest{
-
-    height:auto;
-    display:inline-block;
-    position:relative;
-    transition:.3s;
-    margin:4px;
-  }
-  
-  .imagetest img{
-    width:100%;
-    height:100%;
-    transition:.3s;
-    border-radius:4px;
-  }
-  
-  .imagetest:hover img{
-    filter:blur(2px) brightness(60%);
-    box-shadow:0 0 16px cyan;
-  }
-   
-  .imagetest :not(img){
-    position:absolute;
-    z-index:1;
-    top:10%;
-    width:100%;
-    text-align:center;
-    color:#fff;
-    opacity:0;
-    transition:.3s;
-  }
-  
-  .imagetest h4{
-    top:25%
-  }
-  
-  .imagetest:hover :not(img){
-    opacity:1;
-  }
-  .nobullets{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .column {
-    float: center;
-    width: 50%;
-    padding: 10px;
-
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  </style>
-  <script src="bootstrap.bundle.js"></script>
-  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script-->
-  <link rel="icon" type="image/x-icon" href="favicon.webp">
-  <title>IDC Computers</title>
+  <title>Computer Components</title>
 </head>
 <body>
-    <div class="row">
-        <div class="column">
+  <div class="container">
+    <h1>IDC Computers</h1>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="siteNavigation">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavigation" aria-controls="siteNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-md-center" id="siteNavigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page1.html">How to Build a PC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="page2.html">Systems for Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">Computer Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page4.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
-    <div class="imagetest">
-        <img src="pc1.png">
-        <h1>$5800.00</h1>
-        <h4>something<br>something2<br>something3</h4>
-    </div>
-    </div>
-    <div class="column">
-    <div class="imagetest">
-        <img src="pc1.png">
-        <h1>$5800.00</h1>
-        <h4>something<br>something2<br>something3</h4>
-    </div>
-    </div>
-    </div>
-
+    <div class="container text center bg-warning bg-opacity-10 border border-warning rounded-start rounded-end">
+        <div class="row">
+          <div class="col-6">
+            <div class="imagetotext">
+              <img src="pc1.png">
+              <h1>$5800.00</h1>
+              <h4>something<br>something2<br>something3</h4>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="imagetotext">
+              <img src="oldpc.jpg">
+              <h1>$5800.00</h1>
+              <h4>something<br>something2<br>something3</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="imagetotext">
+              <img src="newpc.jpg">
+              <h1>$5800.00</h1>
+              <h4>something<br>something2<br>something3</h4>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="imagetotext">
+              <img src="download.jpg">
+              <h1>$5800.00</h1>
+              <h4>something<br>something2<br>something3</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        &copy; IDC Computers. All rights reserved.
+      </footer>
+      <script src="bootstrap.bundle.js"></script>
+  </div>
 </body>
+</html>
