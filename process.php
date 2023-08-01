@@ -12,23 +12,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit; // Stop execution to prevent saving empty data and further processing
     }
 
-    // String to save form data
-    $formData = "Name: $name\nEmail: $email\nMessage: $message\n";
-
-    $filePath = "form_data.txt";
-
-    // Save contents to form data file
-    if (file_put_contents($filePath, $formData, FILE_APPEND)) {
-        // Data saved successfully
-        echo "Message received\n";
-    } else {
-        // Failed to save data
-        echo "Failed to save the message.\n";
-    }
 
     // Display the submitted data
     echo "Name: " . $name . "<br>";
     echo "Email: " . $email . "<br>";
     echo "Message: " . $message . "<br>";
+
+	// "Go back" button
+    echo '<br><a href="javascript:history.go(-1)">Go back</a>';
+} else {
+    echo "<p>No form data submitted yet.</p>";
 }
 ?>
