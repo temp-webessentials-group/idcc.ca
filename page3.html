@@ -37,12 +37,14 @@
         </div>
       </div>
     </nav>
+    
     <table>
       <thead>
         <tr>
           <th>Components</th>
           <th>Price</th>
           <th>Availability</th>
+          <th> </th>
         </tr>
       </thead>
       <tbody>
@@ -50,26 +52,31 @@
           <td><a href="https://www.memoryexpress.com/Products/MX00126330" target="_blank">Component A</a></td>
           <td>$999</td>
           <td>In Stock</td>
+          <td><button type="button" onclick="addToCart('Component A', 999)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
         <tr>
           <td><a href="https://www.memoryexpress.com/Products/MX00121050" target="_blank">Component B</a></td>
           <td>$1499</td>
           <td>Out of Stock</td>
+          <td><button type="button" onclick="addToCart('Component B', 1499)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
         <tr>
           <td><a href="https://www.memoryexpress.com/Products/MX00122362" target="_blank">Component C</a></td>
           <td>$799</td>
           <td>In Stock</td>
+          <td><button type="button" onclick="addToCart('Component C', 799)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
         <tr>
           <td><a href="https://www.memoryexpress.com/Products/MX00117188" target="_blank">Component D</a></td>
           <td>$1199</td>
           <td>In Stock</td>
+          <td><button type="button" onclick="addToCart('Component D', 1199)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
         <tr>
           <td><a href="https://www.memoryexpress.com/Products/MX00115721" target="_blank">Component E</a></td>
           <td>$699</td>
           <td>Out of Stock</td>
+          <td><button type="button" onclick="addToCart('Component E', 699)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
       </tbody>
     </table>
@@ -80,43 +87,60 @@
           <th>Component Bundles</th>
           <th>Price</th>
           <th>Availability</th>
+          <th> </th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><a href="" target="_blank">Bunlde A</a></td>
+          <td><a href="" target="_blank">Bundle A</a></td>
           <td>$999</td>
           <td>In Stock</td>
+          <td><button type="button" onclick="addToCart('Bundle A', 999)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
         <tr>
           <td><a href="https://www.memoryexpress.com/Products/BDL_MM00003065" target="_blank">Bundle B</a></td>
           <td>$1499</td>
           <td>Out of Stock</td>
+          <td><button type="button" onclick="addToCart('Bundle B', 1499)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
         <tr>
           <td><a href="" target="_blank">Bundle C</a></td>
           <td>$799</td>
-          <td>In Stock</td>
+          <td>Out of Stock</td>
+          <td><button type="button" onclick="addToCart('Bundle C' 799)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
         <tr>
           <td><a href="" target="_blank">Bundle D</a></td>
           <td>$1199</td>
           <td>In Stock</td>
+          <td><button type="button" onclick="addToCart('Bundle D', 1199)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
         <tr>
           <td><a href="" target="_blank">Bundle E</a></td>
           <td>$699</td>
           <td>Out of Stock</td>
+          <td><button type="button" onclick="addToCart('Bundle E', 699)" class="btn btn-primary">Add to Cart</button></td>
         </tr>
       </tbody>
     </table>
+    
+    <!-- Shopping Cart -->
+    <div class="mt-5">
+      <h2>Shopping Cart</h2>
+        <ul id="cartList" class="list-group">
+        <!-- Cart items will be added dynamically -->
+        </ul>
+      <p>Total Price: <span id="totalPrice">$0</span></p>
+    <button type="button" onclick="checkout()" class="btn btn-success">Checkout</button>
   </div>
+  </div>
+
   
-  <footer>
     &copy; IDC Computers. All rights reserved.
   </footer>
   <script src="script.js"></script>
   <script src="bootstrap.bundle.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="script.js"></script>"
 </body>
 </html>
