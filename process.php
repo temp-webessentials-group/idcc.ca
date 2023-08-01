@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	//display
 	echo "Name: " . $name . "<br>";
 	echo "Email: " . $email . "<br>";
+	echo "Message:" . $message . "<br>";
 	
 }
 ?>
